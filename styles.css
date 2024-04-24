@@ -1,0 +1,257 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    width: 100px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin between logo and company name */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li.ship-now {
+    position: relative; /* Position relative for dropdown */
+}
+
+nav ul li.ship-now .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+    right: 0;
+}
+
+nav ul li.ship-now:hover .dropdown {
+    display: block;
+}
+
+nav ul li.ship-now .dropdown li {
+    display: block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.marquee-container {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+marquee {
+    font-size: 14px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.promotion-section {
+    position: relative;
+    width: 100vw; /* Set desired width */
+    height: 50vh; /* Set desired height */
+    background-image: url('img/nice-transformed.jpeg'); /* Set background image */
+    background-size: cover; /* Scale and crop the image to cover the entire section */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.promotion-content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    text-align: center;
+    color: #fff;
+}
+
+.toggle-buttons {
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    outline: none;
+}
+
+.toggle-buttons button.active {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+
+.form-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.promotion-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.promotion-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.promotion-content button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.promotion-content button:hover {
+    background-color: #555;
+}
+
+
+
+nav ul li.ship-now .dropdown li a {
+    color: #fff; /* Text color for dropdown menu items */
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li.ship-now .dropdown li a:hover {
+    background-color: #555; /* Background color on hover for dropdown menu items */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lobster', cursive; /* Example of using 'Lobster' font for headings */
+}
+/* Add more styles as needed */
+
+
+
+#products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
